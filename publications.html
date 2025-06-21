@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications - Sadanand Modak</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Google Analytics 4 - Universal Tracking -->
+    <script src="analytics.js"></script>
+
+    <style>
+        .pub-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <header style="background-image: url('assets/header.jpg');">
+        <div class="header-overlay">
+            <h1>Publications</h1>
+            <p>Let's collaborate!</p>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <div id="navbar-placeholder"></div>
+
+    <div class="pub-container">
+        <section id="ongoing-research">
+            <!-- <h2>Ongoing Research</h2> -->
+            <div class="projects-grid">
+                <div class="project-card interactive no-image" data-featured="true" data-project-id="featurefield">
+                    <div class="project-info">
+                        <h3>Open-vocabulary Pose Estimation using Feature Fields</h3>
+
+                        <p class="authors"><i><span class="me">Sadanand Modak</span>, Noah Patton, Isil Dillig, Joydeep
+                                Biswas</i></p>
+                        <p class="venue">
+                            <span class="venue-text">Ongoing project</span>
+                            <!-- <span class="venue-name">TODO</span> -->
+                        </p>
+
+                        <div class="project-details">
+                            <p>
+                                We introduce a novel pose-estimation pipeline that maps natural-language prompts
+                                such as “Stand behind the chair facing the table” to one or more SE(3) robot poses
+                                in a pre-scanned scene. A NeRF-style implicit feature field distills 2-D CLIP embeddings
+                                so the robot can render language-aligned relevance maps from arbitrary viewpoints. The
+                                query
+                                is decomposed into clustered local objectives; cost programs are synthesized and
+                                optimized with
+                                CMA-ES, while a multi-modal LLM verifier supplies counter-examples and refinements. The
+                                algorithm
+                                supports pose-end goals as well as downstream-type tasks. We plan to release a
+                                comprehensive benchmark
+                                and open-source implementation.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card interactive no-image">
+                    <div class="project-info">
+                        <h3>Ticking in Tandem: Centrally Coordinated ROS System Resource-Management</h3>
+
+                        <p class="authors"><i>Rohit Dwivedula, <span class="me">Sadanand Modak</span>, Saurabh Agarwal,
+                                Aditya Akella, Joydeep Biswas, Daehyeok Kim, Christopher J. Rossbach</i></p>
+
+                        <p class="venue">
+                            <span class="venue-text">Ongoing project, Talk proposal submitted to</span>
+                            <span class="venue-name">ROSCon 2025</span>
+                        </p>
+
+                        <div class="project-details">
+                            <p>
+                                Tandem is a centralized, intent-driven resource manager for ROS Noetic and Humble
+                                robots.
+                                It inspects the live ROS graph together with developer-provided intents to coordinate
+                                CPU,
+                                GPU, memory and I/O usage across nodes. The scheduler synthesizes low-level actions that
+                                satisfy intents such as end-to-end latency or throughput constraints while avoiding
+                                contention.
+                                The design builds on lessons from our earlier ConfigBot system. Our ROSCon talk outlines
+                                the architecture, demonstrates the workflow, and invites community feedback on
+                                intent-based resource
+                                scheduling.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="publications-full">
+            <h2>Past Research</h2>
+            <div class="projects-grid">
+                <div class="project-card interactive" data-featured="true" data-project-id="synapse">
+                    <img src="assets/synapse.png" alt="SYNAPSE Project">
+                    <div class="project-info">
+                        <h3>SYNAPSE: SYmbolic Neural-Aided Preference Synthesis Engine</h3>
+
+                        <p class="authors"><i><span class="me">Sadanand Modak</span>, Noah Patton, Isil Dillig, Joydeep
+                                Biswas</i></p>
+
+                        <p class="venue">
+                            <span class="venue-text">Published at</span>
+                            <span class="venue-name">AAAI 2025 (Oral)</span>
+                        </p>
+
+                        <div class="project-details">
+                            <p>
+                                This paper addresses the problem of preference learning, which aims to align robot
+                                behaviors through learning user specific preferences (e.g. "good pull-over location")
+                                from visual demonstrations. Despite its similarity to learning factual concepts (e.g.
+                                "red door"), preference learning is a fundamentally harder problem due to its subjective
+                                nature and the paucity of person-specific training data. We address this problem using a
+                                novel framework called SYNAPSE, which is a neuro-symbolic approach designed to
+                                efficiently learn preferential concepts from limited data. SYNAPSE represents
+                                preferences as neuro-symbolic programs, facilitating inspection of individual parts for
+                                alignment, in a domain-specific language (DSL) that operates over images and leverages a
+                                novel combination of visual parsing, large language models, and program synthesis to
+                                learn programs representing individual preferences. We perform extensive evaluations on
+                                various preferential concepts as well as user case studies demonstrating its ability to
+                                align well with dissimilar user preferences. Our method significantly outperforms
+                                baselines, especially when it comes to out of distribution generalization. We show the
+                                importance of the design choices in the framework through multiple ablation studies.
+                            </p>
+                            <div class="pub-links">
+                                <a href="https://amrl.cs.utexas.edu/synapse/" target="_blank"
+                                    aria-label="Project Website"><i class="fa-solid fa-globe"></i></a>
+                                <a href="https://arxiv.org/abs/2403.16689" target="_blank" aria-label="arXiv Paper"><i
+                                        class="fa-solid fa-file-lines"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card interactive" data-featured="true" data-project-id="configbot">
+                    <img src="assets/configbot.png" alt="ConfigBot Project">
+                    <div class="project-info">
+                        <h3>ConfigBot: Adaptive Resource Allocation for Robot Applications</h3>
+
+                        <p class="authors"><i>Rohit Dwivedula, <span class="me">Sadanand Modak</span>, Saurabh Agarwal,
+                                Aditya Akella, Joydeep Biswas, Daehyeok Kim, Christopher J. Rossbach</i></p>
+
+                        <p class="venue">
+                            <span class="venue-text">Published at</span>
+                            <span class="venue-name">IROS 2025</span>
+                        </p>
+
+                        <div class="project-details">
+                            <p>
+                                The growing use of service robots in dynamic environments requires flexible management
+                                of on-board compute resources to optimize the performance of diverse tasks such as
+                                navigation, localization, and perception. Current robot deployments often rely on static
+                                OS configurations and system over-provisioning. However, they are suboptimal because
+                                they do not account for variations in resource usage. This results in poor system-wide
+                                behavior such as robot instability or inefficient resource use. This paper presents
+                                ConifgBot, a novel system designed to adaptively reconfigure robot applications to meet
+                                a predefined performance specification by leveraging runtime profiling and automated
+                                configuration tuning. Through experiments on multiple real robots, each running a
+                                different stack with diverse performance requirements, which could be context-dependent,
+                                we illustrate ConifgBot's efficacy in maintaining system stability and optimizing
+                                resource allocation. Our findings highlight the promise of automatic system
+                                configuration tuning for robot deployments, including adaptation to dynamic changes.
+                            </p>
+
+                            <div class="pub-links">
+                                <a href="https://github.com/ldos-project/configbot" target="_blank"
+                                    aria-label="Code Repository"><i class="fab fa-github"></i></a>
+                                <a href="https://arxiv.org/abs/2501.10513" target="_blank" aria-label="arXiv Paper"><i
+                                        class="fa-solid fa-file-lines"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="project-card interactive" data-featured="true" data-project-id="codebotler">
+                    <img src="assets/codebotler.png" alt="Codebotler Project">
+                    <div class="project-info">
+                        <h3>Codebotler + RoboEval: Deploying and evaluating LLMs to program service mobile robots</h3>
+                        <p class="authors"><i>Zichao Hu, Francesca Lucchetti, Claire Schlesinger, Yash Saxena,
+                                Anders Freeman, <span class="me">Sadanand Modak</span>, Arjun Guha, and Joydeep
+                                Biswas</i></p>
+                        <p class="venue"><span class="venue-text">Published at</span> <span class="venue-name">RA-L
+                                2024</span></p>
+                        <div class="project-details">
+                            <p>
+                                Recent advancements in large language models (LLMs) have spurred interest in using them
+                                for generating robot programs from natural language, with promising initial results. We
+                                investigate the use of LLMs to generate programs for service mobile robots leveraging
+                                mobility, perception, and human interaction skills, and where accurate sequencing and
+                                ordering of actions is crucial for success. We contribute CodeBotler, an open-source
+                                robot-agnostic tool to program service mobile robots from natural language, and
+                                RoboEval, a benchmark for evaluating LLMs' capabilities of generating programs to
+                                complete service robot tasks. CodeBotler performs program generation via few-shot
+                                prompting of LLMs with an embedded domain-specific language (eDSL) in Python, and
+                                leverages skill abstractions to deploy generated programs on any general-purpose mobile
+                                robot. RoboEval evaluates the correctness of generated programs by checking execution
+                                traces starting with multiple initial states, and checking whether the traces satisfy
+                                temporal logic properties that encode correctness for each task. RoboEval also includes
+                                multiple prompts per task to test for the robustness of program generation. We evaluate
+                                several popular state-of-the-art LLMs with the RoboEval benchmark, and perform a
+                                thorough analysis of the modes of failures, resulting in a taxonomy that highlights
+                                common pitfalls of LLMs at generating robot programs.
+                            </p>
+                            <div class="pub-links">
+                                <a href="https://amrl.cs.utexas.edu/codebotler/" target="_blank"
+                                    aria-label="Project Website"><i class="fa-solid fa-globe"></i></a>
+                                <a href="https://arxiv.org/abs/2311.11183" target="_blank" aria-label="arXiv Paper"><i
+                                        class="fa-solid fa-file-lines"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card interactive">
+                    <img src="assets/vid2real.png" alt="Vid2Real Project">
+                    <div class="project-info">
+                        <h3>Vid2Real HRI: Align Video-based HRI Study Designs with Real-world Settings</h3>
+
+                        <p class="authors"><i>Elliot Hauser, Yao-Cheng Chan, <span class="me">Sadanand Modak</span>,
+                                Joydeep Biswas, Justin W. Hart</i></p>
+
+                        <p class="venue">
+                            <span class="venue-text">Published at</span>
+                            <span class="venue-name">RO-MAN 2024</span>
+                        </p>
+
+                        <div class="project-details">
+                            <p>
+                                HRI research using autonomous robots in real-world settings can produce results with the
+                                highest ecological validity of any study modality, but many difficulties limit such
+                                studies' feasibility and effectiveness. We propose Vid2Real HRI, a research framework to
+                                maximize real-world insights offered by video-based studies. The Vid2Real HRI framework
+                                was used to design an online study using first-person videos of robots as real-world
+                                encounter surrogates. The online study (n=385) distinguished the within-subjects effects
+                                of four robot behavioral conditions on perceived social intelligence and human
+                                willingness to help the robot enter an exterior door. A real-world, between-subjects
+                                replication (n=26) using two conditions confirmed the validity of the online study's
+                                findings and the sufficiency of the participant recruitment target (22) based on a power
+                                analysis of online study results. The Vid2Real HRI framework offers HRI researchers a
+                                principled way to take advantage of the efficiency of video-based study modalities while
+                                generating directly transferable knowledge of real-world HRI.
+                            </p>
+
+                            <div class="pub-links">
+                                <a href="https://vid2real.github.io/vid2realHRI/" target="_blank"
+                                    aria-label="Project Website"><i class="fa-solid fa-globe"></i></a>
+                                <a href="https://arxiv.org/abs/2403.15798" target="_blank" aria-label="arXiv Paper"><i
+                                        class="fa-solid fa-file-lines"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card interactive no-image">
+                    <div class="project-info">
+                        <h3>Perceived Social Intelligence and Human Compliance in Incidental Human-Robot Encounters</h3>
+                        <p class="authors"><i>Yao-Cheng Chan, Elliot Hauser, <span class="me">Sadanand Modak</span>,
+                                Joydeep Biswas, Justin Hart</i></p>
+                        <p class="venue"><span class="venue-text">Under review at</span> <span class="venue-name">Expert
+                                Systems</span></p>
+                        <div class="project-details">
+                            <p>This study examines how socially compliant robot behaviors, operationalized as body
+                                language and verbal cues, affect human perceptions of social intelligence and compliance
+                                with a quadruped robot during incidental human-robot encounters. Extending prior work
+                                that primarily focused on direct human-robot interactions, this study addresses the
+                                understudied context of incidental encounters, which are brief, unplanned interactions
+                                between bystanders and autonomous robots in public environments. In an online
+                                video-based study with 385 participants, we found that both verbal and body language
+                                behaviors significantly improved the robot's perceived social intelligence (PSI), which
+                                in turn positively correlated with human compliance. Verbal communication alone
+                                increased compliance likelihood more than body language, and combining both yielded the
+                                highest PSI ratings and compliance scores. To validate these findings beyond controlled
+                                video scenarios, a follow-up real-world study with 26 participants replicated the
+                                results: 11 out of 13 of participants complied in the Body Language + Verbal condition
+                                versus only 1 in the baseline condition. Free-text responses revealed the importance of
+                                clearly stated intentions, politeness, and concerns about robot legitimacy and safety.
+                                Together, these findings highlight the critical role of perceived social intelligence in
+                                fostering human assistance for robots during incidental encounters and offer design
+                                strategies to support robot deployment in public environments.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card interactive">
+                    <img src="assets/kinematics.png" alt="Kinematics Project">
+                    <div class="project-info">
+                        <h3>Kinematics and Singularity Analysis of a Novel Hybrid Industrial Manipulator</h3>
+
+                        <p class="authors"><i><span class="me">Sadanand Modak</span>, Rama Krishna K.</i></p>
+
+                        <p class="venue">
+                            <span class="venue-text">Published at</span>
+                            <span class="venue-name">Robotica (Cambridge University Press) 2023</span>
+                        </p>
+
+                        <div class="project-details">
+                            <p>
+                                This paper proposes a new type of hybrid manipulator that can be of extensive use in
+                                industries where translational motion is required while maintaining an arbitrary
+                                end-eﬀector orientation. It consists of two serially connected parallel mechanisms, each
+                                having three degrees of freedom, of which the upper platform performs a pure
+                                translational motion with respect to the mid-platform. Closed-form forward and inverse
+                                kinematic analysis of the proposed manipulator has been carried out. It is followed by
+                                the determination of all of its singular conﬁgurations. The theoretical results have
+                                been veriﬁed numerically, and the 3D modeling and simulation of the manipulator have
+                                also been performed. A simple optimal design is presented based on optimizing the
+                                kinematic manipulability, which further demonstrates the potential of the
+                                proposed hybrid manipulator.
+                            </p>
+
+                            <div class="pub-links">
+                                <a href="https://www.cambridge.org/core/journals/robotica/article/kinematics-and-singularity-analysis-of-a-novel-hybrid-industrial-manipulator/32EFC4A701F3E6E16AE44CD403694269"
+                                    target="_blank" aria-label="Journal Paper"><i
+                                        class="fa-solid fa-file-lines"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="workshops">
+            <h2>Workshops, LBRs, & Short Papers</h2>
+            <div class="projects-grid">
+                <div class="project-card interactive">
+                    <img src="assets/FAIR_WS.png" alt="FAIR HRI Datasets Project">
+                    <div class="project-info">
+                        <h3>Curate, Connect, Inquire: A System for Findable Accessible Interoperable and Reusable (FAIR)
+                            Human-Robot Centered Datasets</h3>
+                        <p class="authors"><i>Xingru Zhou, <span class="me">Sadanand Modak</span>, Yao-Cheng Chan,
+                                Zhiyun Deng, Luis Sentis, Maria Esteva</i></p>
+                        <p class="venue"><span class="venue-text">Workshop paper at</span> <span class="venue-name">ICRA 2025
+                                Workshop on Human-Centered Robot Learning (HCRL)</span></p>
+                        <div class="project-details">
+                            <p>The rapid growth of AI in robotics has amplified the need for high-quality, reusable datasets, particularly in human-robot interaction (HRI) and AI-embedded robotics. While more robotics datasets are being created, the landscape of open data in the field is uneven. This is due to a lack of curation standards and consistent publication practices, which makes it difficult to discover, access, and reuse robotics data. To address these challenges, this paper presents a curation and access system with two main contributions: (1) a structured methodology to curate, publish, and integrate FAIR (Findable, Accessible, Interoperable, Reusable) human-centered robotics datasets; and (2) a ChatGPT-powered conversational interface trained with the curated datasets metadata and documentation to enable exploration, comparison robotics datasets and data retrieval using natural language. Developed based on practical experience curating datasets from robotics labs within Texas Robotics at the University of Texas at Austin, the system demonstrates the value of standardized curation and persistent publication of robotics data. The system's evaluation suggests that access and understandability of human-robotics data are significantly improved. This work directly aligns with the goals of the HCRL @ ICRA 2025 workshop and represents a step towards more human-centered access to data for embodied AI.</p>
+                            <div class="pub-links">
+                                <a href="https://human-cenetered-robot-learning-workshop.github.io/icra-2025/"
+                                    target="_blank" aria-label="Workshop Website"><i class="fa-solid fa-globe"></i></a>
+                                <a href="https://arxiv.org/abs/2506.00220" target="_blank" aria-label="arXiv Paper"><i
+                                        class="fa-solid fa-file-lines"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card interactive no-image">
+                    <div class="project-info">
+                        <h3>Shaping Perceptions of Robots With Video Vantages</h3>
+                        <p class="authors"><i>Yao-Cheng Chan, Elliot Hauser, <span class="me">Sadanand Modak</span></i></p>
+                        <p class="venue"><span class="venue-text">Late-breaking report at</span> <span
+                                class="venue-name">HRI 2025</span></p>
+                        <div class="project-details">
+                            <p>This study investigates the role of video vantage, “Encounterer“ and “Observer”, in shaping perceptions of robot social intelligence. Using videos depicting robots navigating hall-ways and employing gaze cues, results revealed that the Observer vantage consistently yielded higher ratings for perceived social intelligence compared to the Encounterer vantage. These findings underscore the impact of vantage on interpreting robot behaviors and highlight the need for careful design of video-based HRI studies to ensure accurate and generalizable insights for real-world applications.</p>
+                            <div class="pub-links">
+                                <a href="https://ieeexplore.ieee.org/document/10974252" target="_blank"
+                                    aria-label="Paper"><i class="fa-solid fa-file-lines"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card interactive no-image">
+                    <!-- <img src="assets/amrl.png" alt="SLAM Failures Project"> -->
+                    <div class="project-info">
+                        <h3>Multi-Factor Visual SLAM Failures in Mobile Service Robot Deployments</h3>
+                        <p class="authors"><i>Amanda A Adkins*, Taijing Chen*, <span class="me">Sadanand Modak*</span>, Joydeep Biswas</i></p>
+                        <p class="venue"><span class="venue-text">Spotlight Talk at</span> <span class="venue-name">RSS
+                                2023 Workshop on Towards Safe Autonomy: New Challenges and Trends in Robot Perception</span></p>
+                        <div class="project-details">
+                            <p>An analysis of various failure modes in visual SLAM systems when deployed on mobile
+                                service robots, identifying key factors that contribute to system failures in real-world
+                                environments.</p>
+                            <div class="pub-links">
+                                <a href="https://sites.google.com/view/rss2023-safe-autonomy" target="_blank"
+                                    aria-label="Workshop Website"><i class="fa-solid fa-globe"></i></a>
+                                <a href="https://drive.google.com/file/d/14mQX0_fkb447dit6Z0wuozo91sPqqT52/view"
+                                    target="_blank" aria-label="Paper"><i class="fa-solid fa-file-lines"></i></a>
+                                <a href="https://www.youtube.com/watch?v=TVz5XrXm8Wo" target="_blank"
+                                    aria-label="Video Presentation"><i class="fa-solid fa-video"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="misc">
+            <h2>Miscellaneous</h2>
+            <div class="misc-list">
+                <div class="misc-item">
+                    <h4>ICRA 2023 BARN Challenge on Autonomous Navigation</h4>
+                    <!-- <p class="misc-authors"><i><span class="me">Sadanand Modak</span>, AMRL Team</i></p> -->
+                    <p class="misc-description">Participated in the BARN (Benchmark Autonomous Robot Navigation)
+                        Challenge, developing and testing autonomous navigation algorithms for mobile robots in complex,
+                        constrained environments.</p>
+                    <div class="misc-links">
+                        <a href="https://cs.gmu.edu/~xiao/Research/BARN_Challenge/BARN_Challenge24.html" target="_blank"
+                            aria-label="Challenge Website"><i class="fa-solid fa-globe"></i> BARN website</a>
+                    </div>
+                </div>
+
+                <div class="misc-item">
+                    <h4>Amazon Lab126 Astro SDK Workshop (Invite-Only)</h4>
+                    <!-- <p class="misc-authors"><i><span class="me">Sadanand Modak</span></i></p> -->
+                    <p class="misc-description">Internal workshop at Amazon Lab126 to explore and develop applications
+                        using the Amazon Astro home robot SDK preview.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Load components and scripts -->
+    <script src="components/loader.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
