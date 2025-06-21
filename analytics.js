@@ -3,7 +3,7 @@
 
 (function() {
     // Configuration - Update this with your actual GA4 Measurement ID
-    const GA4_MEASUREMENT_ID = 'G-XXXXXXXXXX';
+    const GA4_MEASUREMENT_ID = 'G-ZTPGT8WSHJ';
     
     // Load GA4 script
     const script = document.createElement('script');

@@ -301,11 +301,13 @@ h2 {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s ease-out;
+    padding-bottom: 0;
 }
 
 .project-card.active .project-details {
-    max-height: 500px;
+    max-height: 800px;
     transition: max-height 0.5s ease-in;
+    padding-bottom: 1rem;
 }
 
 .project-info .authors {
