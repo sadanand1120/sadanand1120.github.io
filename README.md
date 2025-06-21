@@ -1,8 +1,8 @@
-# Sadanand Modak's Academic Website
+# Personal Website
 
 A clean, modular academic website built with HTML, CSS, and JavaScript. This repository contains the complete setup for deployment using **GitHub Pages + Cloudflare + Google Analytics 4**.
 
-**Live Website**: [sadanand1120.github.io](https://sadanand1120.github.io) → [Your custom domain]
+**Live Website**: [sadanandmodak.com](sadanandmodak.com)
 
 ## Table of Contents
 
@@ -138,10 +138,8 @@ Type: MX    Name: @    Mail server: route1.mx.cloudflare.net    Priority: 10
 
 ### Step 4: Cloudflare SSL/TLS Settings
 
-1. **SSL/TLS** → **Overview**
-2. **Encryption mode**: Full (strict)
-3. **Edge Certificates**: Auto (should show active certificate)
-4. **Always Use HTTPS**: ON
+1. **SSL/TLS** → **Overview** → **Encryption mode**: Full (strict)
+2. **SSL/TLS** → **Edge Certificates** → **Always Use HTTPS**: ON
 
 ---
 
@@ -323,20 +321,3 @@ curl -I https://sadanandmodak.com
 # Verify GitHub Pages
 curl -I https://sadanand1120.github.io
 ```
-
----
-
-## Next Steps
-
-1. ✅ **GitHub Pages**: Already set up and running
-2. 🔄 **Custom Domain**: Purchase domain via Cloudflare and configure DNS
-3. 🔄 **SSL Setup**: Configure Cloudflare SSL settings
-4. ✅ **GA4 Setup**: Already configured with advanced tracking
-5. 🔄 **Test Integration**: Verify everything works together
-6. ✅ **Content Updates**: Add new publications and projects as needed
-
-**Your website is already live and professional!** The custom domain setup will make it even more polished for academic and professional use.
-
----
-
-*This website leverages the best free and low-cost tools for academic web presence. Total ongoing cost: ~$10/year for the domain only.* 
