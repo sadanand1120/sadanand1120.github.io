@@ -15,6 +15,13 @@ body {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
+.pub-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #fff;
+}
+
 /* Header */
 header {
     background-size: cover;

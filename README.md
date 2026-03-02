@@ -2,7 +2,7 @@
 
 A clean, modular academic website built with HTML, CSS, and JavaScript. This repository contains the complete setup for deployment using **GitHub Pages + Cloudflare + Google Analytics 4**.
 
-**Live Website**: [sadanandmodak.com](sadanandmodak.com)
+**Live Website**: [sadanandmodak.com](https://sadanandmodak.com)
 
 ## Table of Contents
 
@@ -27,7 +27,8 @@ sadanand1120.github.io/
 ├── components/
 │   ├── navbar.html        # Navigation bar (loaded dynamically)
 │   ├── footer.html        # Footer (loaded dynamically)
-│   └── loader.js          # Component loader system
+│   ├── head.js            # Shared head dependencies (CSS/fonts/analytics include)
+│   └── loader.js          # Component loader + featured projects sync
 ├── index.html             # Home page
 ├── publications.html      # Publications page
 ├── analytics.js           # Google Analytics 4 tracking
@@ -38,6 +39,7 @@ sadanand1120.github.io/
 
 ### Key Features:
 - **Dynamic Components**: Navbar and footer loaded via JavaScript
+- **Shared Head Setup**: Common CSS/font/analytics dependencies loaded from `components/head.js`
 - **GA4 Integration**: Advanced tracking with modular `analytics.js`
 - **Responsive Design**: Mobile-friendly academic layout
 - **Interactive Projects**: Expandable project cards with tracking
@@ -251,14 +253,7 @@ Create a new HTML file with this template:
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Page - Sadanand Modak</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap"
-        rel="stylesheet">
-    <!-- Google Analytics 4 - Universal Tracking -->
-    <script src="analytics.js"></script>
+    <script src="components/head.js"></script>
 </head>
 <body>
     <header style="background-image: url('assets/header.jpg');">
@@ -307,7 +302,7 @@ Add new project cards to `publications.html` - the home page automatically displ
 1. **Custom domain not working**: Wait 24-48 hours for DNS propagation
 2. **HTTPS errors**: Ensure Cloudflare SSL is set to "Full (strict)"
 3. **Analytics not tracking**: Check browser console for errors
-4. **Components not loading**: Verify file paths in `components/loader.js`
+4. **Components not loading**: Verify file paths in `components/loader.js` and `components/head.js`
 
 ### Quick Checks:
 

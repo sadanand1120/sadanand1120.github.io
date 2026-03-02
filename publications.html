@@ -5,24 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Publications - Sadanand Modak</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap"
-        rel="stylesheet">
-
-    <!-- Google Analytics 4 - Universal Tracking -->
-    <script src="analytics.js"></script>
-
-    <style>
-        .pub-container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 2rem;
-            background: #fff;
-        }
-    </style>
+    <script src="components/head.js"></script>
 </head>
 
 <body>
@@ -120,7 +103,7 @@
                         <div class="project-details">
                             <p>
                                 This paper addresses the problem of preference learning, which aims to align robot
-                                behaviors through learning user specific preferences (e.g. "good pull-over location")
+                                behaviors through learning user-specific preferences (e.g. "good pull-over location")
                                 from visual demonstrations. Despite its similarity to learning factual concepts (e.g.
                                 "red door"), preference learning is a fundamentally harder problem due to its subjective
                                 nature and the paucity of person-specific training data. We address this problem using a
@@ -165,11 +148,11 @@
                                 OS configurations and system over-provisioning. However, they are suboptimal because
                                 they do not account for variations in resource usage. This results in poor system-wide
                                 behavior such as robot instability or inefficient resource use. This paper presents
-                                ConifgBot, a novel system designed to adaptively reconfigure robot applications to meet
+                                ConfigBot, a novel system designed to adaptively reconfigure robot applications to meet
                                 a predefined performance specification by leveraging runtime profiling and automated
                                 configuration tuning. Through experiments on multiple real robots, each running a
                                 different stack with diverse performance requirements, which could be context-dependent,
-                                we illustrate ConifgBot's efficacy in maintaining system stability and optimizing
+                                we illustrate ConfigBot's efficacy in maintaining system stability and optimizing
                                 resource allocation. Our findings highlight the promise of automatic system
                                 configuration tuning for robot deployments, including adaptation to dynamic changes.
                             </p>
@@ -185,9 +168,9 @@
 
                 </div>
                 <div class="project-card interactive" data-featured="true" data-project-id="codebotler">
-                    <img src="assets/codebotler.png" alt="Codebotler Project">
+                    <img src="assets/codebotler.png" alt="CodeBotler Project">
                     <div class="project-info">
-                        <h3>Codebotler + RoboEval: Deploying and evaluating LLMs to program service mobile robots</h3>
+                        <h3>CodeBotler + RoboEval: Deploying and evaluating LLMs to program service mobile robots</h3>
                         <p class="authors"><i>Zichao Hu, Francesca Lucchetti, Claire Schlesinger, Yash Saxena,
                                 Anders Freeman, <span class="me">Sadanand Modak</span>, Arjun Guha, and Joydeep
                                 Biswas</i></p>
@@ -281,7 +264,7 @@
                                 increased compliance likelihood more than body language, and combining both yielded the
                                 highest PSI ratings and compliance scores. To validate these findings beyond controlled
                                 video scenarios, a follow-up real-world study with 26 participants replicated the
-                                results: 11 out of 13 of participants complied in the Body Language + Verbal condition
+                                results: 11 out of 13 participants complied in the Body Language + Verbal condition
                                 versus only 1 in the baseline condition. Free-text responses revealed the importance of
                                 clearly stated intentions, politeness, and concerns about robot legitimacy and safety.
                                 Together, these findings highlight the critical role of perceived social intelligence in
@@ -306,12 +289,12 @@
                             <p>
                                 This paper proposes a new type of hybrid manipulator that can be of extensive use in
                                 industries where translational motion is required while maintaining an arbitrary
-                                end-eﬀector orientation. It consists of two serially connected parallel mechanisms, each
+                                end-effector orientation. It consists of two serially connected parallel mechanisms, each
                                 having three degrees of freedom, of which the upper platform performs a pure
                                 translational motion with respect to the mid-platform. Closed-form forward and inverse
                                 kinematic analysis of the proposed manipulator has been carried out. It is followed by
-                                the determination of all of its singular conﬁgurations. The theoretical results have
-                                been veriﬁed numerically, and the 3D modeling and simulation of the manipulator have
+                                the determination of all of its singular configurations. The theoretical results have
+                                been verified numerically, and the 3D modeling and simulation of the manipulator have
                                 also been performed. A simple optimal design is presented based on optimizing the
                                 kinematic manipulability, which further demonstrates the potential of the
                                 proposed hybrid manipulator.
@@ -342,7 +325,7 @@
                         <p class="venue"><span class="venue-text">Workshop paper at</span> <span class="venue-name">ICRA 2025
                                 Workshop on Human-Centered Robot Learning (HCRL)</span></p>
                         <div class="project-details">
-                            <p>The rapid growth of AI in robotics has amplified the need for high-quality, reusable datasets, particularly in human-robot interaction (HRI) and AI-embedded robotics. While more robotics datasets are being created, the landscape of open data in the field is uneven. This is due to a lack of curation standards and consistent publication practices, which makes it difficult to discover, access, and reuse robotics data. To address these challenges, this paper presents a curation and access system with two main contributions: (1) a structured methodology to curate, publish, and integrate FAIR (Findable, Accessible, Interoperable, Reusable) human-centered robotics datasets; and (2) a ChatGPT-powered conversational interface trained with the curated datasets metadata and documentation to enable exploration, comparison robotics datasets and data retrieval using natural language. Developed based on practical experience curating datasets from robotics labs within Texas Robotics at the University of Texas at Austin, the system demonstrates the value of standardized curation and persistent publication of robotics data. The system's evaluation suggests that access and understandability of human-robotics data are significantly improved. This work directly aligns with the goals of the HCRL @ ICRA 2025 workshop and represents a step towards more human-centered access to data for embodied AI.</p>
+                            <p>The rapid growth of AI in robotics has amplified the need for high-quality, reusable datasets, particularly in human-robot interaction (HRI) and AI-embedded robotics. While more robotics datasets are being created, the landscape of open data in the field is uneven. This is due to a lack of curation standards and consistent publication practices, which makes it difficult to discover, access, and reuse robotics data. To address these challenges, this paper presents a curation and access system with two main contributions: (1) a structured methodology to curate, publish, and integrate FAIR (Findable, Accessible, Interoperable, Reusable) human-centered robotics datasets; and (2) a ChatGPT-powered conversational interface trained with the curated datasets metadata and documentation to enable exploration, comparison of robotics datasets and data retrieval using natural language. Developed based on practical experience curating datasets from robotics labs within Texas Robotics at the University of Texas at Austin, the system demonstrates the value of standardized curation and persistent publication of robotics data. The system's evaluation suggests that access and understandability of human-robotics data are significantly improved. This work directly aligns with the goals of the HCRL @ ICRA 2025 workshop and represents a step towards more human-centered access to data for embodied AI.</p>
                             <div class="pub-links">
                                 <a href="https://human-cenetered-robot-learning-workshop.github.io/icra-2025/"
                                     target="_blank" aria-label="Workshop Website"><i class="fa-solid fa-globe"></i></a>
@@ -359,7 +342,7 @@
                         <p class="venue"><span class="venue-text">Late-breaking report at</span> <span
                                 class="venue-name">HRI 2025</span></p>
                         <div class="project-details">
-                            <p>This study investigates the role of video vantage, “Encounterer“ and “Observer”, in shaping perceptions of robot social intelligence. Using videos depicting robots navigating hall-ways and employing gaze cues, results revealed that the Observer vantage consistently yielded higher ratings for perceived social intelligence compared to the Encounterer vantage. These findings underscore the impact of vantage on interpreting robot behaviors and highlight the need for careful design of video-based HRI studies to ensure accurate and generalizable insights for real-world applications.</p>
+                            <p>This study investigates the role of video vantage, "Encounterer" and "Observer", in shaping perceptions of robot social intelligence. Using videos depicting robots navigating hallways and employing gaze cues, results revealed that the Observer vantage consistently yielded higher ratings for perceived social intelligence compared to the Encounterer vantage. These findings underscore the impact of vantage on interpreting robot behaviors and highlight the need for careful design of video-based HRI studies to ensure accurate and generalizable insights for real-world applications.</p>
                             <div class="pub-links">
                                 <a href="https://ieeexplore.ieee.org/document/10974252" target="_blank"
                                     aria-label="Paper"><i class="fa-solid fa-file-lines"></i></a>
