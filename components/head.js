@@ -23,6 +23,10 @@
         appendLink({ rel: 'stylesheet', href: 'style.css' });
     }
 
+    if (!document.querySelector('link[rel="icon"]')) {
+        appendLink({ rel: 'icon', href: '/favicon.ico', sizes: 'any' });
+    }
+
     if (!document.querySelector('link[href*="font-awesome"]')) {
         appendLink({
             rel: 'stylesheet',
